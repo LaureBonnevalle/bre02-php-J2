@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>mini projet cv</title>
+</head>
+<body>
+    <h1>Mon CV</h1>
+    <main>
+    <form action ="index.php" method='post'>
+        <section class="section1">
+            <h2>Informations</h2>
+         <label for="lastName">Nom</label> <!-- si on met require à la fin de linput ça rend le champ obmligatoire pour la poursuite-->
+             <input type="text" name="lastName"/>
+         <label for="lastName">Prenom</label>
+             <input type="text" name="firstName"/>
+         <label for="email">Email<label>
+             <input type="email" name="email"/>
+         <label for="tel">Telephone</label>
+             <input type="number" name="tel"/>
+         <label for="linkedin">Linkedin</label>
+             <input type="text" name="linkedin"/>
+         <label for="GitHub">GitHub</label>
+             <input type="text" name="GitHub"/>
+         <label for="biographie">Biographie</label>
+             <textarea type="textarea" name="biographie"> </textarea>
+         <label for="Loisir1">Loisir 1</label>
+             <input type="text" name="loisir1"/>   
+         <label for="loisir2">Loisir 2</label>
+             <input type="text" name="loisir2"/>  
+         <label for="loisir3">Loisir 3</label>
+             <input type="text" name="loisir3"/>   
+         <label for="loisir4">Loisir4</label>
+             <input type="text" name="loisir4"/>   
+        
+            <h3>Langues</h3>
+            <label for="francais">Français</label>
+            <input type="checkbox" id="langue" name="francais" value="Français"/>
+            <label for="anglais">Anglais</label>
+            <input type="checkbox" id="langue" name="anglais" value="Anglais"/>
+            <label for="Arabe">Arabe</label>
+            <input type="checkbox" id="langue" name="arabe" value="Arabe"/>
+            <label for="breton">Breton</label>
+            <input type="checkbox" id="langue" name="breton" value="breton"/>
+            <label for="espagnol">Espagnol</label>
+            <input type="checkbox" id="langue" name="espagnol" value="espagnol"/>
+        </section>
+        <section class="section2">
+            <h2>Competences</h2>
+                <h3> Langages de programmation</h3>
+                    <label for="html">HTML</label>
+                        <input type="checkbox" id="langage prog" name="html" value="html"/>
+                    <label for="CSS">CSS</label>
+                        <input type="checkbox" id="langage prog" name="css" value="css"/>
+                    <label for="JavaScript">JavaScript</label>
+                        <input type="checkbox" id="langage prog" name="JS" value="JS"/>
+                    <label for="PHP">PHP</label>
+                        <input type="checkbox" id="langage prog" name="php" value="php"/>
+                    <label for="SQL">SQL</label>
+                        <input type="checkbox" id="langage prog" name="sql" value="sql"/>
+            
+                <h3> Frameworks & Librairies</h3>
+                    <label for="sass">SASS</label>
+                        <input type="checkbox" id="framework" name="sass" value="sass"/>
+                    <label for="bootstrap">Bootstrap</label>
+                        <input type="checkbox" id="framework" name="bootstrap" value="bootstrap"/>
+                    <label for="Symfony">Symfony</label>
+                        <input type="checkbox" id="framework" name="symfony" value="symfony"/>
+                    <label for="Laravel">Laravel</label>
+                        <input type="checkbox" id="framework" name="laravel" value="laravel"/>
+            
+                <h3> Logiciels</h3>
+                    <label for="photoshop">Photoshop</label>
+                        <input type="checkbox" id="logiciel" name="photoshop" value="photoshop"/>
+                    <label for="illustrator">Illustrator</label>
+                        <input type="checkbox" id="logiciel" name="illustrator" value="illustrator"/>
+                    <label for="xd">XD</label>
+                        <input type="checkbox" id="logiciel" name="xd" value="xd"/>
+                    <label for="figma">Figma</label>
+                        <input type="checkbox" id="logiciel" name="figma" value="figma"/>
+                        
+                <h3>Couleur du CV </h3>
+                    <label for="colorSelect">Couleur</label></label>
+                    <select id="colorSelect">
+                        <option value= "bleu">bleu</option>
+                        <option value= "rouge">rouge</option>
+                    </select>
+        </section>
+        
+        <button type="submit" value="Submit"> Envoyer</button>
+        </main>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo Formulaires</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1> Resultat : </h1>
+        <form method="post" action="form.php">
+            <fieldset>
+                <label for="nb1">
+                   1er nombre
+                </label>
+                <input type="number" step="1" name="nb1" id="nb1" />
+            </fieldset>
+            <fieldset>
+                <label for="nb2">
+                    2e nombre
+                </label>
+                <input type="number" step="1" name="nb2" id="nb2">
+            <fieldset>
+                <label for="select operateur">
+                    operateur
+                </label>
+                <select name="operation" id="operation">
+                    <option value="add"> + </option>
+                    <option value="sub"> - </option>
+                    <option value="mul"> x </option>
+                    <option value="div"> / </option>
+                    <option value="mod"> % </option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <button type="submit"> = </button>
+            </fieldset>
+        </form>
+    </body>
+</html>

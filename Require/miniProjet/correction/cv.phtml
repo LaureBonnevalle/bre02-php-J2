@@ -1,0 +1,197 @@
+<?php
+
+if(isset($_GET["nom"]))
+    $lastName = $_GET["nom"];
+
+if(isset($_GET["prenom"]))
+    $firstName = $_GET["prenom"];
+    
+if(isset($_GET["email"]))
+    $email = $_GET["email"];
+    
+if(isset($_GET["telephone"]))
+    $telephone = $_GET["telephone"];
+    
+if(isset($_GET["linkedin"]))
+    $linkedin = $_GET["linkedin"];
+    
+if(isset($_GET["github"]))
+    $github = $_GET["github"];
+    
+if(isset($_GET["biographie"]))
+    $bio = $_GET["biographie"];
+    
+if(isset($_GET["loisir-1"]))
+    $loisir1 = $_GET["loisir-1"];
+    
+if(isset($_GET["loisir-2"]))
+    $loisir2 = $_GET["loisir-2"];
+    
+if(isset($_GET["loisir-3"]))
+    $loisir3 = $_GET["loisir-3"];
+    
+if(isset($_GET["loisir-4"]))
+    $loisir4 = $_GET["loisir-4"];
+    
+if(isset($_GET["language"]))
+    $language = $_GET["language"];
+    
+if(isset($_GET["lang"]))
+    $lang = $_GET["lang"];
+    
+if(isset($_GET["frameworks"]))
+    $framework = $_GET["frameworks"];
+    
+if(isset($_GET["software"]))
+    $software = $_GET["software"];
+    
+if(isset($_GET["color"]))
+    $color = $_GET["color"];
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            CV
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="cv" class="<?= $color; ?>">
+        <header>
+            <h1><span><?= $lastName; ?></span> <?= $firstName; ?></h1>
+            <h2>Intitulé du poste</h2>
+        </header>
+        <main>
+            <section id="left">
+                <h3>Informations</h3>
+                <section>
+                    <h4>
+                        Contact
+                    </h4>
+                    <dl>
+                        <dt>
+                            Email
+                        </dt>
+                        <dd>
+                            <?= $email; ?>
+                        </dd>
+                        <dt>
+                            Téléphone
+                        </dt>
+                        <dd>
+                            <?= $telephone; ?>
+                        </dd>
+                        <dt>
+                            LinkedIn
+                        </dt>
+                        <dd>
+                            <a href="<?= $linkedin ?>"><?= $linkedin ?></a>
+                        </dd>
+                        <dt>
+                            GitHub
+                        </dt>
+                        <dd>
+                            <a href="<?= $github ?>"><?= $github ?></a>
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4>Biographie</h4>
+                    <p>
+                        <?= $bio; ?>
+                    </p>
+                </section>
+                <section>
+                    <h4>Loisirs</h4>
+                    <ul>
+                        <li>
+                            <?= $loisir1; ?>
+                        </li>
+                        <li>
+                            <?= $loisir2; ?>
+                        </li>
+                        <li>
+                            <?= $loisir3; ?>
+                        </li>
+                        <li>
+                            <?= $loisir4; ?>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="right">
+                <h3>Compétences</h3>
+                <section>
+                    <h4>Langages des programmation</h4>
+                    <ul>
+                        <?php
+                        
+                            foreach($lang as $item)
+                            {
+                        ?>
+                        
+                            <li><?= $item; ?></li>
+                        
+                        <?php   
+                            }
+                        ?>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Frameworks & Librairies</h4>
+                    <ul>
+                        <?php
+                        
+                            foreach($framework as $item)
+                            {
+                        ?>
+                        
+                            <li><?= $item; ?></li>
+                        
+                        <?php   
+                            }
+                        ?>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Logiciels</h4>
+                    <ul>
+                        <?php
+                        
+                            foreach($software as $item)
+                            {
+                        ?>
+                        
+                            <li><?= $item; ?></li>
+                        
+                        <?php   
+                            }
+                        ?>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Langues</h4>
+                    <ul>
+                        <?php
+                        
+                            foreach($language as $item)
+                            {
+                        ?>
+                        
+                            <li><?= $item; ?></li>
+                        
+                        <?php   
+                            }
+                        ?>
+                    </ul>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

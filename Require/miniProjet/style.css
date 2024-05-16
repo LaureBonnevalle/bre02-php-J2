@@ -1,0 +1,36 @@
+/*rouge : #b50604;  
+bleu : #24527c;  
+blanc fond : #fefefe;  
+blanc : white;  
+gris : #bababa;  */
+
+body {
+    font-family:'Montserrat', sans serif;
+}
+
+main {
+    
+    display: flex;
+}
+
+
+
+h1, h2, h3 {
+    color:  #24527c;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform : uppercase;
+}
+
+h1, h2 {
+    font-size : ;
+}
+
+.section1 {
+    flex-direction : column;
+}
+
+

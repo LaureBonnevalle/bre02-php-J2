@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Formulaire
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="form">
+        <main>
+            <form method="get" action="index.php">
+                <section>
+                    <h3>
+                        Informations
+                    </h3>
+                    <div>
+                        <fieldset>
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="telephone">Téléphone</label>
+                            <input type="text" name="telephone" id="telephone" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="text" name="linkedin" id="linkedin" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="github">GitHub</label>
+                            <input type="text" name="github" id="github" />
+                        </fieldset>
+                        <fieldset id="textarea">
+                            <label for="biographie">Biographie</label>
+                            <textarea name="biographie" id="biographie">
+                            </textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="loisir-1">Loisir 1</label>
+                            <input type="text" name="loisir-1" id="loisir-1" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="loisir-2">Loisir 2</label>
+                            <input type="text" name="loisir-2" id="loisir-2" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="loisir-3">Loisir 3</label>
+                            <input type="text" name="loisir-3" id="loisir-3" />
+                        </fieldset>
+                        <fieldset>
+                            <label for="loisir-4">Loisir 4</label>
+                            <input type="text" name="loisir-4" id="loisir-4" />
+                        </fieldset>
+                    </div>
+                    <h4>
+                        Langues
+                    </h4>
+                    <fieldset>
+                        <input type="checkbox" name="language[]" id="fr" value="Français"/>
+                        <label for="fr">Français</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="language[]" id="en" value="Anglais"/>
+                        <label for="en">Anglais</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="language[]" id="arabe" value="Arabe"/>
+                        <label for="arabe">Arabe</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="language[]" id="breton" value="Breton"/>
+                        <label for="breton">Breton</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="language[]" id="espagnol" value="Espagnol"/>
+                        <label for="espagnol">Espagnol</label>
+                    </fieldset>
+                </section>
+                <section>
+                    <h3>
+                        Compétences
+                    </h3>
+                    <h4>
+                        Langages de Programmation
+                    </h4>
+                    <fieldset>
+                        <input type="checkbox" name="lang[]" id="html" value="HTML"/>
+                        <label for="html">HTML</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="lang[]" id="css" value="CSS"/>
+                        <label for="css">CSS</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="lang[]" id="js" value="JavaScript"/>
+                        <label for="js">JavaScript</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="lang[]" id="php" value="PHP"/>
+                        <label for="php">PHP</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="lang[]" id="sql" value="SQL"/>
+                        <label for="sql">SQL</label>
+                    </fieldset>
+                    <h4>
+                        Frameworks & Librairies
+                    </h4>
+                    <fieldset>
+                        <input type="checkbox" name="frameworks[]" id="sass" value="Sass"/>
+                        <label for="sass">Sass</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="frameworks[]" id="bootstrap" value="Bootstrap"/>
+                        <label for="bootstrap">Bootstrap</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="frameworks[]" id="symfony" value="Symfony"/>
+                        <label for="symfony">Symfony</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="frameworks[]" id="laravel" value="Laravel"/>
+                        <label for="laravel">Laravel</label>
+                    </fieldset>
+                    <h4>
+                        Logiciels
+                    </h4>
+                    <fieldset>
+                        <input type="checkbox" name="software[]" id="ps" value="Photoshop"/>
+                        <label for="ps">Photoshop</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="software[]" id="il" value="Illustrator"/>
+                        <label for="il">Illustrator</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="software[]" id="xd" value="XD"/>
+                        <label for="xd">XD</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" name="software[]" id="figma" value="Figma"/>
+                        <label for="figma">Figma</label>
+                    </fieldset>
+                    <h4>
+                        Couleur du CV
+                    </h4>
+                    <fieldset id="select">
+                        <label for="color">Couleur</label>
+                        <select name="color" id="color">
+                            <option name="bleu" value="blue">Bleu</option>
+                            <option name="rouge" value="red">Rouge</option>
+                        </select>
+                    </fieldset>
+                </section>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </main>
+    </body>
+</html>
